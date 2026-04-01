@@ -65,7 +65,7 @@ public class Main
 public static void programIntro(){
   int num;
     
-     num = UtilityBelt.readInt("\nPlease enter a number between 0 and 999: ", 0, 999);
+     num = UtilityBelt.readInt("Please enter a number between 0 and 999: ", 0, 999);
     
     System.out.println("Hundreds   = " + num / 100);
     System.out.println("Tens       = " + (num % 100) / 10);
@@ -112,10 +112,10 @@ public static void printQuipu(int hundreds, int tens, int ones){
    * Handles the continuation loop for multiple quipus.
    */
 public static void toContinue(){
-  char response = UtilityBelt.readChar("Would you like to make another quipu? [Y/N]: ", "YyNn");
+  char response = UtilityBelt.readChar("\nWould you like to make another quipu? [Y/N]: ", "YyNn");
   while (response == 'Y' || response == 'y') {
     Main.programIntro();
-    response = UtilityBelt.readChar("Would you like to make another quipu? [Y/N]: ", "YyNn");
+    response = UtilityBelt.readChar("\nWould you like to make another quipu? [Y/N]: ", "YyNn");
   }
   if (response == 'N' || response == 'n') {
     System.out.println("\nGoodbye!");
