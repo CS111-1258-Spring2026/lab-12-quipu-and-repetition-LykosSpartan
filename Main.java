@@ -118,7 +118,7 @@ public static void toContinue(){
     response = UtilityBelt.readChar("Would you like to make another quipu? [Y/N]: ", "YyNn");
   }
   if (response == 'N' || response == 'n') {
-    
+    System.out.println("\nGoodbye!");
   
   }
 }
